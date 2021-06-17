@@ -17,7 +17,7 @@
         >
         </v-text-field>
         <div>
-          Output of <code>main</code>: {{ mainOut }}
+          Did you know? {{ mainOut }}
         </div>
       </div>
     </v-card>
