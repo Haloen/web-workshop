@@ -1,5 +1,10 @@
-import {Quote} from "@/types/quote";
+import {User} from "@/types/user";
+import {Repo} from "@/types/repo";
 
-export async function getQuote(): Promise<Quote> {
-    return await (await fetch("https://api.quotable.io/random")).json();
+export async function getUser(username: string): Promise<User> {
+    return await (await fetch("https://api.github.com/users/" + username)).json();
+}
+
+export async function getRepo(username: string): Promise<Repo[]> {
+    return await (await fetch("https://api.github.com/users/" + username + "/repos")).json();
 }
