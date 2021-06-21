@@ -1,5 +1,5 @@
-import {Fact} from "@/types/fact";
+import {Quote} from "@/types/quote";
 
-export async function getFact(): Promise<Fact> {
-    return await (await fetch("https://uselessfacts.jsph.pl/random.json?language=en")).json();
+export async function getQuote(): Promise<Quote> {
+    return await (await fetch("https://api.quotable.io/random")).json();
 }

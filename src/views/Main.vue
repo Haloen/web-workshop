@@ -17,7 +17,7 @@
         >
         </v-text-field>
         <div>
-          Did you know? {{ mainOut }}
+          Quote Of The Day: {{ mainOut }}
         </div>
       </div>
     </v-card>

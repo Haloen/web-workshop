@@ -1,8 +1,8 @@
-import {getFact} from "@/api/api";
+import {getQuote} from "@/api/api";
 
 async function main(): Promise<string> {
-  const data = await getFact();
-  return data.text;
+  const data = await getQuote();
+  return `"${data.content}" ~ ${data.author}`;
 }
 
 export default {
